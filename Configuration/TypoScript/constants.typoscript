@@ -1,0 +1,58 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+
+
+############
+### PAGE ###
+############
+page {
+    logo {
+        file = EXT:buddysystem/Resources/Public/Images/BuddySystem.jpg
+        fileInverted = EXT:buddysystem/Resources/Public/Images/BuddySystem.jpg
+        height = 52
+        width = 192
+        alt = BuddySystem
+        linktitle = BuddySystem
+    }
+    favicon {
+        file = EXT:buddysystem/Resources/Public/Icons/favicon.ico
+    }
+    fluidtemplate {
+        layoutRootPath = EXT:buddysystem/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:buddysystem/Resources/Private/Partials/Page/
+        templateRootPath = EXT:buddysystem/Resources/Private/Templates/Page/
+    }
+}
+
+
+##################
+### EXTENSIONS ###
+##################
+plugin.bootstrap_package {
+    view {
+        layoutRootPath = EXT:buddysystem/Resources/Private/Layouts/
+        partialRootPath = EXT:buddysystem/Resources/Private/Partials/
+        templateRootPath = EXT:buddysystem/Resources/Private/Templates/
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+plugin.bootstrap_package_contentelements {
+    view {
+        layoutRootPath = EXT:buddysystem/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:buddysystem/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:buddysystem/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+#######################################
+### REMOVE BOOTSTRAP LESS CONSTANTS ###
+#######################################
+plugin.bootstrap_package.settings.less >
+plugin.bootstrap_package.settings.overrideLessVariables >

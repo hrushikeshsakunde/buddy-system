@@ -1,0 +1,7 @@
+#
+# PageTS for BuddySystem
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:buddysystem/Configuration/PageTS/RTE.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:buddysystem/Configuration/PageTS/TCEFORM.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:buddysystem/Configuration/PageTS/TCEMAIN.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:buddysystem/Configuration/PageTS/Mod/WebLayout/BackendLayouts.txt">

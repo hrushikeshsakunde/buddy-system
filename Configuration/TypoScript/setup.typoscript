@@ -1,0 +1,41 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page {
+    includeCSSLibs {
+        googlewebfont >
+    }
+
+    includeCSS {
+        theme = EXT:buddysystem/Resources/Public/Css/theme.min.css
+	style = EXT:buddysystem/Resources/Public/Css/style.css
+	  datepickerCss=https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css
+                        datepickerCss.external = 1;
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+        script =
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        buddysystem_scripts = EXT:buddysystem/Resources/Public/JavaScript/Dist/scripts.js
+        moment = https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js
+                datepicker=https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js
+                           moment.external = 1;
+                            datepicker.external =  1;
+    }
+}

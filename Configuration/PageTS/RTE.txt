@@ -1,0 +1,44 @@
+#############
+#### RTE ####
+#############
+RTE {
+    config {
+        tt_content {
+            bodytext {
+                types {
+                    text {
+                        preset = buddysystem
+                    }
+                    textcolumn {
+                        preset = buddysystem
+                    }
+                    texticon {
+                        preset = buddysystem
+                    }
+                    textmedia {
+                        preset = buddysystem
+                    }
+                    textpic {
+                        preset = buddysystem
+                    }
+                    textteaser {
+                        preset = buddysystem
+                    }
+                    panel {
+                        preset = buddysystem
+                    }
+                }
+            }
+        }
+        tx_bootstrappackage_accordion_item {
+            bodytext {
+                preset = buddysystem
+            }
+        }
+        tx_bootstrappackage_tab_item {
+            bodytext {
+                preset = buddysystem
+            }
+        }
+    }
+}
